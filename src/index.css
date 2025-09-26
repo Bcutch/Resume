@@ -15,3 +15,25 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+.projects {
+  grid-row: span 2;
+}
+
+.bubble {
+  border-radius: calc(infinity * 1px);
+  height: 25px;
+  width: fit-content;
+  color: white;
+  background-color: darkslategrey;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.skills {
+  grid-column: span 2;
+}
+
+ul {
+  list-style-type: disc;
+}

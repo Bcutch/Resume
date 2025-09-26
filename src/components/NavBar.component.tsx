@@ -1,5 +1,3 @@
-//import { useState, useEffect } from "react";
-
 interface NavProps {
     
 }
@@ -19,7 +17,7 @@ export const NavBar: React.FC<NavProps> = ({}) => {
                     Download Resume
                 </button>
                 <button className={`${buttonStyle} border-x-1`}>
-                    Remove?
+                    LinkedIn?
                 </button>
                 <button className={`${buttonStyle} border-r-2 rounded-r-sm`}>
                     Contact Me

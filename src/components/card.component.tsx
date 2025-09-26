@@ -10,8 +10,8 @@ interface cardProps {
 export const Card: React.FC<cardProps> = ({
     color = "bg-gray-400 border-gray-900/30",
     style = "border-2 rounded-r-xl",
-    size = "50",
-    animate = "transition delay-150 duration-300 ease-in-out hover:translate-x-5 hover:scale-110",
+    size = "60",
+    animate = "transition delay-150 duration-300 ease-in-out hover:translate-x-4 hover:scale-110",
     title,
     img,
 }) => {
