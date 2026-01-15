@@ -12,12 +12,8 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-.projects {
-  grid-row: span 2;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .bubble {
@@ -30,8 +26,12 @@ body {
   padding-right: 10px;
 }
 
-.skills {
+.stretch {
   grid-column: span 2;
+}
+
+.hs {
+  grid-row: span 2;
 }
 
 ul {

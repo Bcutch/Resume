@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { Modal } from "./modal.component";
 
-interface NavProps {
+interface FooterProps {
     
 }
 
-export const NavBar: React.FC<NavProps> = () => {
+export const Footer: React.FC<FooterProps> = () => {
 
-    const buttonStyle = "w-45 p-1 text-center text-md text-white font-bold border-gray-900/10";
-    const homeStyle = "flex-auto py-l pl-5 text-start text-lg text-white font-bold";
+    const buttonStyle = "w-70 p-1 text-center text-md text-white font-bold border-gray-900/10";
+    const homeStyle = "flex-auto py-l pl-5 text-center text-xl text-white font-bold";
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <>
-            <div className="flex h-13 justify-end bg-gray-400 border-gray-900/30 rounded-b-md">
+            <div className="flex h-13 justify-end bg-gray-400 border-gray-900/30 rounded-t-md">
                 <button className={`${homeStyle}`}>
-                    Brettan Cutchall
+                    Thank you for considering me!
                 </button>
                 <button className={`${buttonStyle} border-l-2 border-r-1 rounded-l-sm hover:cursor-pointer`}>
                     <a href="../../Brettan_Cutchall_Resume.pdf" download="Brettan_Cutchall_Resume.pdf">
