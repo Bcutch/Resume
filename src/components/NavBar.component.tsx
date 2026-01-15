@@ -2,13 +2,14 @@ import { useState } from "react";
 import { Modal } from "./modal.component";
 
 interface NavProps {
-    
+    buttonStyle?: string,
+    homeStyle?: string
 }
 
-export const NavBar: React.FC<NavProps> = () => {
-
-    const buttonStyle = "w-45 p-1 text-center text-md text-white font-bold border-gray-900/10";
-    const homeStyle = "flex-auto py-l pl-5 text-start text-lg text-white font-bold";
+export const NavBar: React.FC<NavProps> = ({
+    buttonStyle = "w-45 p-1 text-center text-md text-white font-bold border-gray-900/10",
+    homeStyle = "flex-auto py-l pl-5 text-start text-lg text-white font-bold"
+}) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 

@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Modal } from "./modal.component";
 
 interface FooterProps {
-    
+    extra?: string
 }
 
-export const Footer: React.FC<FooterProps> = () => {
+export const Footer: React.FC<FooterProps> = ({
+    extra = ""
+}) => {
 
     const buttonStyle = "w-70 p-1 text-center text-md text-white font-bold border-gray-900/10";
     const homeStyle = "flex-auto py-l pl-5 text-center text-xl text-white font-bold";
@@ -14,7 +16,7 @@ export const Footer: React.FC<FooterProps> = () => {
 
     return (
         <>
-            <div className="flex h-13 justify-end bg-gray-400 border-gray-900/30 rounded-t-md">
+            <div className={`flex h-13 justify-end bg-gray-400 border-gray-900/30 rounded-t-md ${extra}`}>
                 <button className={`${homeStyle}`}>
                     Thank you for considering me!
                 </button>

@@ -1,17 +1,19 @@
 import { WorkCard } from "./workCard.component"
 
 interface workProps {
-    
+    extra?: string
 }
 
-export const WorkCards: React.FC<workProps> = ({}) => {
+export const WorkCards: React.FC<workProps> = ({
+    extra = ""
+}) => {
     return(
         <>
             <div className={`flex-col`}>
                 <h1 className="text-white font-bold mb-4">
                     Work Experience:
                 </h1>
-                <div className={`h-265 overflow-x-hidden no-scrollbar pb-4 rounded-lg`}>
+                <div className={`h-265 overflow-x-hidden no-scrollbar pb-4 rounded-lg ${extra}`}>
                     <WorkCard img="mwss.png" title="Making Waves Swimming School" content={
                         <>
                             <div>
