@@ -33,7 +33,7 @@ export const WorkCard: React.FC<cardProps> = ({
     return(
         <>
             <div className={`w-full h-${size} ${color} ${style} mt-2`}>
-                <img src={`../../images/${img}`} alt="" className={`w-full h-55 ${style} aspect-square object-cover`} />
+                <img src={`/images/${img}`} alt="" className={`w-full h-55 ${style} aspect-square object-cover`} />
                 <h1 className={`flex ml-3 text-xl font-bold text-gray-700`}>
                     <div className='flex-auto'>
                         {title}

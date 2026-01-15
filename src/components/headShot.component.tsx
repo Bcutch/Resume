@@ -14,12 +14,12 @@ export const HeadShot: React.FC<HSProps> = ({
         <>
             {size==null && 
                 (<div className={`${position}`}>
-                    <img src="../../images/headshot.jpg" className={`h-[20vw] w-[20vw] ${border} aspect-square rounded-full object-cover`} />
+                    <img src="/images/headshot.jpg" className={`h-[20vw] w-[20vw] ${border} aspect-square rounded-full object-cover`} />
                 </div>)}
 
             {size!=null && 
                 (<div className={`${position}`}>
-                    <img src="../../images/headshot.jpg" className={`h-${size} w-${size} ${border} aspect-square rounded-full object-cover`} />
+                    <img src="/images/headshot.jpg" className={`h-${size} w-${size} ${border} aspect-square rounded-full object-cover`} />
                 </div>)}
         </>
     )

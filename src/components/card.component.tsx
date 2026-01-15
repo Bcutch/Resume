@@ -23,7 +23,7 @@ export const Card: React.FC<cardProps> = ({
     return(
         <>
             <div className={`w-99/110 h-${size} ${color} ${style} ${animate} mt-2`} onClick={onClick}>
-                <img src={`../../images/${img}`} alt="" className={`w-full h-80 ${style} aspect-square object-cover`} />
+                <img src={`/images/${img}`} alt="" className={`w-full h-80 ${style} aspect-square object-cover`} />
                 <h1 className={`ml-3 text-xl font-bold text-gray-700`}>
                     {title}
                 </h1>

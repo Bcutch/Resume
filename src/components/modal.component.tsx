@@ -11,19 +11,19 @@ export const Modal: React.FC<ModalProps> = ({
                 <div className='mb-6 items-center justify-between space-y-3'>
                     <h2 className='text-2xl font-bold text-white mb-10'>Contact Info</h2>
                     <div className="flex">
-                        <img src={`../../images/phone.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
+                        <img src={`/images/phone.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
                         <h3 className='text-xl font-bold text-white ml-10'>
                             226-750-2892
                         </h3>
                     </div>
                     <div className="flex">
-                        <img src={`../../images/email.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
+                        <img src={`/images/email.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
                         <h3 className='text-xl font-bold text-white ml-10'>
                             brettan.cutchall@gmail.com
                         </h3>
                     </div>
                     <div className="flex">
-                        <img src={`../../images/git.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
+                        <img src={`/images/git.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
                         <h3 className='text-xl font-bold text-white ml-10'>
                             <a href="https://github.com/Bcutch" target="_blank" rel="noopener noreferrer">
                                 https://github.com/Bcutch

@@ -20,7 +20,7 @@ export const NavBar: React.FC<NavProps> = ({
                     Brettan Cutchall
                 </button>
                 <button className={`${buttonStyle} border-l-2 border-r-1 rounded-l-sm hover:cursor-pointer`}>
-                    <a href="../../Brettan_Cutchall_Resume.pdf" download="Brettan_Cutchall_Resume.pdf">
+                    <a href="/Brettan_Cutchall_Resume.pdf" download="Brettan_Cutchall_Resume.pdf">
                         Download Resume
                     </a>
                 </button>
