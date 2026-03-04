@@ -18,7 +18,7 @@ export const ProjectCards: React.FC<projProps> = ({
                     <Card img="plant-together.jpg" title="Plant Together" onClick={() => window.open('https://plant-together.nnourr.tech/', '_blank', 'noopener,noreferrer')}/>
                     <Card img="uoguessr.jpg" title="UoGuesser" onClick={()=>{window.open('https://github.com/Bcutch/UoGuessr', '_blank', 'noopener,noreferrer')}}/>
                     <Card img="geo.png" title="GeoJobSearch" onClick={()=>{window.open('https://github.com/Bcutch/GeoJobSearch', '_blank', 'noopener,noreferrer')}}/>
-                    <Card img="Brophie.png" title="Brophie" onClick={()=>{window.open('https://brofie.vercel.app/', '_blank', 'noopener,noreferrer')}}/>
+                    <Card img="Brophie.png" title="Brophie" onClick={()=>{window.open('https://brophie.vercel.app/', '_blank', 'noopener,noreferrer')}}/>
                 </div>
             </div>
         </>
