@@ -26,7 +26,7 @@ export const Card: React.FC<cardProps> = ({
                     <img 
                         src={`/images/${img}`} 
                         alt={title} 
-                        className="w-full h-40 sm:h-52 object-cover rounded-t-xl" 
+                        className="w-full h-36 sm:h-44 object-cover rounded-t-xl transition duration-300 group-hover:scale-105" 
                     />
                     {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent rounded-t-xl" /> */}
                 </div>

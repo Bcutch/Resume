@@ -19,7 +19,7 @@ export const Home: React.FC = () => {
                     <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 mt-6 sm:mt-12">
                         <div className="section-card p-8 flex flex-col items-center gap-6 sm:flex-row sm:items-start">
                             <div className="flex-shrink-0">
-                                <HeadShot position="flex justify-center" />
+                                <HeadShot />
                             </div>
                             <div className="flex-1 mt-4 sm:mt-0">
                                 <h1 className="text-2xl font-bold text-slate-900 mb-1">
@@ -42,10 +42,10 @@ export const Home: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="mt-6">
+                        <div className="mt-4 sm:mt-6">
                             <School />
                         </div>
-                        <div className="mt-6">
+                        <div className="mt-4 sm:mt-6">
                             <Skills />
                         </div>    
                     </div>

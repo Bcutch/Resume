@@ -36,6 +36,10 @@ body {
   grid-column: span 2;
 }
 
+.hs {
+  grid-row: span 2;
+}
+
 ul {
   list-style-type: disc;
 }
