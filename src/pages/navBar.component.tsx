@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Modal } from "./modal.component";
+import { Modal } from "../components/modal.component";
 
 interface NavProps {
     buttonStyle?: string,

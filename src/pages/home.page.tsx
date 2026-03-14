@@ -1,5 +1,5 @@
 import { HeadShot } from "../components/headShot.component";
-import { NavBar } from "../components/navBar.component";
+import { NavBar } from "./navBar.component";
 import { ProjectCards } from "../components/projectCards.component";
 import { WorkCards } from "../components/workCards.component";
 import { School } from "../components/school.component";
