@@ -6,29 +6,33 @@ export const Modal: React.FC<ModalProps> = ({
     onClose,
 }: ModalProps) => {
     return (
-        <div className='fixed inset-0 z-9999 flex items-center justify-center backdrop-blur-xs transition-opacity duration-200'>
-            <div className='w-[32rem] rounded-xl bg-slate-800 p-6 shadow-xl'>
+        <div className='fixed inset-0 z-9999 flex items-center justify-center backdrop-blur-sm transition-opacity duration-200 px-4'>
+            <div className='w-full max-w-sm sm:max-w-lg rounded-2xl bg-slate-800 p-6 sm:p-8 shadow-2xl border border-slate-200'>
                 <div className='mb-6 items-center justify-between space-y-3'>
-                    <h2 className='text-2xl font-bold text-white mb-10'>Contact Info</h2>
-                    <div className="flex">
+                    <h2 className='text-2xl font-bold text-white'>Contact Info</h2>
+                    <p className="text-sm text-slate-500 mb-6">Feel free to reach out through any of the channels below.</p>
+                    <div className="flex items-center gap-4">
                         <img src={`/images/phone.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
-                        <h3 className='text-xl font-bold text-white ml-10'>
+                        <span className='text-lg sm:text-base font-medium text-white'>
                             226-750-2892
-                        </h3>
+                        </span>
                     </div>
-                    <div className="flex">
+                    <div className="flex items-center gap-4">
                         <img src={`/images/email.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
-                        <h3 className='text-xl font-bold text-white ml-10'>
+                        <span className='text-lg sm:text-base font-medium text-white break-all'>
                             brettan.cutchall@gmail.com
-                        </h3>
+                        </span>
                     </div>
-                    <div className="flex">
+                    <div className="flex items-center gap-4">
                         <img src={`/images/git.png`} alt="" className={`w-9 h-9 border-2 aspect-square rounded-full object-cover`} />
-                        <h3 className='text-xl font-bold text-white ml-10'>
-                            <a href="https://github.com/Bcutch" target="_blank" rel="noopener noreferrer">
-                                https://github.com/Bcutch
-                            </a>
-                        </h3>
+                        <a
+                            href="https://github.com/Bcutch"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-lg sm:text-base font-medium text-blue-600 hover:text-blue-800 transition-colors"
+                        >
+                            github.com/Bcutch
+                        </a>
                     </div>
                 </div>
                 <div className='max-h-[60vh] space-y-2 space-x-40 text-right'>

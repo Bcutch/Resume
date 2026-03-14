@@ -1,18 +1,14 @@
 interface cardProps {
-    color?: string,
-    style?: string,
-    size?: string,
     animate?: string,
+    description?: string,
     title: string,
     img: string,
     onClick: ()=>void,
 }
 
 export const Card: React.FC<cardProps> = ({
-    color = "bg-gray-400 border-gray-900/30",
-    style = "border-2 rounded-r-xl",
-    size = "110",
-    animate = "transition delay-150 duration-300 ease-in-out hover:translate-x-[1vw] hover:translate-y-2 hover:scale-105 hover:cursor-pointer",
+    animate = "transition duration-200 ease-in-out hover:translate-y-[-4px] hover:shadow-lg hover:cursor-pointer",
+    description = "",
     title,
     img,
     onClick
@@ -22,11 +18,35 @@ export const Card: React.FC<cardProps> = ({
 
     return(
         <>
-            <div className={`w-99/110 h-${size} ${color} ${style} ${animate} mt-2`} onClick={onClick}>
-                <img src={`/images/${img}`} alt="" className={`w-full h-80 ${style} aspect-square object-cover`} />
-                <h1 className={`ml-3 text-xl font-bold text-gray-700`}>
-                    {title}
-                </h1>
+            <div 
+                className={`section-card overflow-hidden ${animate} mt-2 group`} 
+                onClick={onClick}
+            >
+                <div className="relative overflow-hidden">
+                    <img 
+                        src={`/images/${img}`} 
+                        alt={title} 
+                        className="w-full h-40 sm:h-52 object-cover rounded-t-xl" 
+                    />
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent rounded-t-xl" /> */}
+                </div>
+                <div className="px-4 py-3">
+                    <div className="flex items-start justify-between gap-2">
+                        <div>
+                            <h1 className="text-sm sm:text-base font-semibold text-slate-800 leading-tight">
+                                {title}
+                            </h1>
+                            {description && (
+                                <p className="text-xs text-slate-500 mt-0.5">
+                                    {description}
+                                </p>
+                            )}
+                            <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded-full flex-shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-150">
+                                View →
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

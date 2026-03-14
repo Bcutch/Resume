@@ -10,15 +10,13 @@ export const ProjectCards: React.FC<projProps> = ({
 
     return(
         <>
-            <div className={`flex-col`}>
-                <h1 className="text-white font-bold mb-4">
-                    Passion Projects:
-                </h1>
-                <div className={`w-full h-265 overflow-x-hidden no-scrollbar pb-4 rounded-lg ${animate}`}>
-                    <Card img="plant-together.jpg" title="Plant Together" onClick={() => window.open('https://plant-together.nnourr.tech/', '_blank', 'noopener,noreferrer')}/>
-                    <Card img="uoguessr.jpg" title="UoGuesser" onClick={()=>{window.open('https://github.com/Bcutch/UoGuessr', '_blank', 'noopener,noreferrer')}}/>
-                    <Card img="geo.png" title="GeoJobSearch" onClick={()=>{window.open('https://github.com/Bcutch/GeoJobSearch', '_blank', 'noopener,noreferrer')}}/>
-                    <Card img="Brophie.png" title="Brophie" onClick={()=>{window.open('https://brophie.vercel.app/', '_blank', 'noopener,noreferrer')}}/>
+            <div className="flex flex-col h-full">
+                <span className="section-heading">Passion Projects</span>
+                <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${animate}`}>
+                    <Card img="plant-together.jpg" title="Plant Together" description="A collaborative PlantUML editor" onClick={() => window.open('https://plant-together.nnourr.tech/', '_blank', 'noopener,noreferrer')}/>
+                    <Card img="Brophie.png" title="Brophie" description="A organizable photo gallery" onClick={()=>{window.open('https://brophie.vercel.app/', '_blank', 'noopener,noreferrer')}}/>
+                    <Card img="uoguessr.jpg" title="UoGuesser" description="GeoGuessr-style campus game" onClick={()=>{window.open('https://github.com/Bcutch/UoGuessr', '_blank', 'noopener,noreferrer')}}/>
+                    <Card img="geo.png" title="GeoJobSearch" description="Geographic job listing explorer" onClick={()=>{window.open('https://github.com/Bcutch/GeoJobSearch', '_blank', 'noopener,noreferrer')}}/>
                 </div>
             </div>
         </>

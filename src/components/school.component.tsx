@@ -1,60 +1,43 @@
 interface skillsProps {
     color?: string,
-    style?: string,
     size?: string,
     animate?: string,
 }
 
 export const School: React.FC<skillsProps> = ({
-    color = "bg-gray-400 border-gray-900/30",
-    style = "border-2 rounded-xl",
+    color = "",
     animate = "",
+    size = "py-5 px-6"
 }) => {
 
     return(
         <>
-            <div className={`w-full h-full py-3 ${color} ${style} ${animate}`}>
-                <h1 className={`flex justify-start ml-3 mb-5 text-xl font-bold text-gray-700`}>
-                    Education:
-                </h1>
-                <div className={`flex mx-3 text-lg italic text-sky-900`}>
-                    <div className={`flex flex-auto justify-start`}>
-                        <h2 className={`font-bold`}>
+            <div className={`section-card w-full h-full ${color} ${size} ${animate}`}>
+                <span className={`section-heading`}>Education</span>
+                <div className="flex items-baseline justify-between mt-1">
+                    <div className="flex items-baseline gap-2">
+                        <h2 className="text-base font-bold text-slate-800">
                             University of Guelph
                         </h2>
-                        <h2 className={`ml-1`}>
-                            (GPA: 3.3/4.0)
-                        </h2>
+                        <span className="text-sm text-slate-500 italic">(GPA: 3.3/4.0)</span>
                     </div>
-                    <h2 className={`justify-end`}>
-                        Sep 2019 - Dec 2025
-                    </h2>
+                    <span className="text-sm text-slate-500 font-medium">Sep 2019 – Dec 2025</span>
                 </div>
-                <div className={`flex mx-3 text-lg italic text-sky-900`}>
-                    <h2 className={`flex flex-auto justify-start`}>
-                        Bachelor of Computing, Honours Major Software Engineering
-                    </h2>
-                    <h2 className={`justify-end`}>
-                        Guelph, ON
-                    </h2>
+                <div className="flex justify-between items-baseline mt-0.5">
+                    <p className="text-sm text-blue-700 font-medium italic">
+                    Bachelor of Computing, Honours Major Software Engineering
+                    </p>
+                    <span className="text-sm text-slate-500">Guelph, ON</span>
                 </div>
-                <div className={`flex mx-3 text-lg italic text-sky-900`}>
-                    <h2 className={`flex flex-auto justify-start ml-5`}>
-                        Area of Applictaion in Mathematics
-                    </h2>
+                <p className="text-sm text-slate-500 italic ml-4 mt-0.5">
+                    Area of Application in Mathematics
+                </p>
+                <div className="mt-3 text-sm text-slate-700">
+                    <span className="font-semibold text-slate-800">Relevant Coursework: </span>
+                    Software Reliability &amp; Testing, Databases, Software Design, Object Oriented Programming,
+                    Mobile Computing, Human Computer Interaction, System Analysis &amp; Design, Data Structures,
+                    Algorithms, Parallel Programming
                 </div>
-                <ul className={`ml-10`}>
-                    <li className={`justify-start text-lg text-sky-900`}>
-                        <h2 className={`font-bold inline-block`}>
-                            Relevant Coursework:
-                        </h2>
-                        <h2 className={`ml-1 inline-block`}>
-                            Software Reliability & Testing, Databases, Software Design, Object Oriented Programing, 
-                            Mobile Computing, Human Computer Interaction, System Analysis & Design, Data Structures, 
-                            Algorithms, Parallel Programming
-                        </h2>
-                    </li>
-                </ul>
             </div>
         </>
     )

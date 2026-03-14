@@ -1,5 +1,5 @@
 import { HeadShot } from "../components/headShot.component";
-import { NavBar } from "./navBar.component";
+import { NavBar } from "../components/navBar.component";
 import { ProjectCards } from "../components/projectCards.component";
 import { WorkCards } from "../components/workCards.component";
 import { School } from "../components/school.component";
@@ -14,16 +14,24 @@ export const Home: React.FC = () => {
                 Brettan Cutchall
             </title>
             <body>
-                <div className="flex-col">
+                <div className="flex-col min-h-screen bg-[#bacbdb]">
                     <NavBar />
-                    <div className="flex flex-col mt-15 mx-[25vw] justify-center items-center">
-                        <div className="hs">
-                            <HeadShot />
-                            <div className="ml-15 mt-10">
-                                <h1 className="text-yellow-200 font-bold mb-4">
-                                    About me!
+                    <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 mt-6 sm:mt-12">
+                        <div className="section-card p-8 flex flex-col items-center gap-6 sm:flex-row sm:items-start">
+                            <div className="flex-shrink-0">
+                                <HeadShot position="flex justify-center" />
+                            </div>
+                            <div className="flex-1 mt-4 sm:mt-0">
+                                <h1 className="text-2xl font-bold text-slate-900 mb-1">
+                                    Brettan Cutchall
                                 </h1>
-                                <p>
+                                <p className="text-sm text-blue-600 font-semibold mb-4 uppercase tracking-wide">
+                                    Software Engineer
+                                </p>
+                                <span className="section-heading">
+                                    About Me
+                                </span>
+                                <p className="text-sm text-slate-600 leading-relaxed mt-2">
                                     I’m 24 and recently graduated from the University of Guelph with a Bachelor of Computing, 
                                     majoring in Software Engineering (Honours). Through my studies, I’ve developed strong full-stack 
                                     development skills and, more importantly, hands-on experience working in agile team environments, 
@@ -34,21 +42,18 @@ export const Home: React.FC = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="mt-30 h-fit w-full">
+                        <div className="mt-6">
                             <School />
                         </div>
-                        <div className="mt-10 w-1/2 h-fit">
+                        <div className="mt-6">
                             <Skills />
-                        </div>
-                        
+                        </div>    
                     </div>
-                    <div className="flex justify-center items-center mt-20 gap-60">
-                        <div className="w-4/9 mb-10 mt-10 fit-content">
-                            <ProjectCards />
-                        </div>
-                        <div className="w-1/3 mb-10 mt-10">
-                            <WorkCards />
-                        </div>
+                    <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 mt-6 sm:mt-10">
+                        <ProjectCards />
+                    </div>
+                    <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 mt-6 sm:mt-8">
+                        <WorkCards />
                     </div>
                     <Footer />
                 </div>

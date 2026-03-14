@@ -9,28 +9,32 @@ export const Footer: React.FC<FooterProps> = ({
     extra = ""
 }) => {
 
-    const buttonStyle = "w-70 p-1 text-center text-md text-white font-bold border-gray-900/10";
-    const homeStyle = "flex-auto py-l pl-5 text-center text-xl text-white font-bold";
+    const buttonStyle = "px-5 py-2 text-sm text-slate-200 font-semibold hover:text-white hover:bg-white/10 rounded-md transition-colors duration-150";
+    const homeStyle = "flex-auto pl-6 text-center text-sm text-slate-400 font-medium";
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <>
-            <div className={`flex h-13 justify-end bg-gray-400 border-gray-900/30 rounded-t-md ${extra}`}>
-                <button className={`${homeStyle}`}>
+            <div className={`flex items-center h-14 bg-slate-900 shadow-inner px-2 mt-16 ${extra}`}>
+                <span className={homeStyle}>
                     Thank you for considering me!
-                </button>
-                <button className={`${buttonStyle} border-l-2 border-r-1 rounded-l-sm hover:cursor-pointer`}>
-                    <a href="../../Brettan_Cutchall_Resume.pdf" download="Brettan_Cutchall_Resume.pdf">
+                </span>
+                <div className="flex gap-1 pr-4">
+                    <a 
+                        className={buttonStyle}
+                        href="../../Brettan_Cutchall_Resume.pdf"
+                        download="Brettan_Cutchall_Resume.pdf"
+                    >
                         Download Resume
                     </a>
-                </button>
-                {/* <button className={`${buttonStyle} border-x-1 hover:cursor-pointer`}>
-                    LinkedIn?
-                </button> */}
-                <button className={`${buttonStyle} border-r-2 border-l-1 rounded-r-sm hover:cursor-pointer`} onClick={() => {setIsModalOpen(true)}}>
-                    Contact Me
-                </button>
+                    <button 
+                        className={`${buttonStyle} cursor-pointer`} 
+                        onClick={() => setIsModalOpen(true)}
+                    >
+                        Contact Me
+                    </button>
+                </div>
             </div>
             {isModalOpen && (
                 <Modal
