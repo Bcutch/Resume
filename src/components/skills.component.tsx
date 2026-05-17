@@ -17,7 +17,8 @@ export const Skills: React.FC<skillsProps> = ({
                         "C", "Java", "Python", "JavaScript", "TypeScript", "HTML",
                         "React", "Express", "TailwindCSS", "Node", "MySQL", "Docker",
                         "Git", "Jest", "jQuery", "Agile Development", "SOLID Design",
-                        "REST API", "Flutter", "Dart", "Adaptive Design"
+                        "REST API", "Flutter", "Dart", "Adaptive Design", "postgresql",
+                        "Responsive Design", "AWS S3", "Redis", "SpringBoot"
                     ].map((skill) => (
                         <div key={skill} className="bubble">{skill}</div>
                     ))}

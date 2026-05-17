@@ -21,15 +21,16 @@ export const WorkCards: React.FC<workProps> = ({
                         <>
                             <div>
                                 <h2 className={title}>
-                                    Customer Service Representative
+                                    Administrative Supervisor
                                 </h2>
                                 <h2 className={date}>
                                     Mar 2024 - Present
                                 </h2>
                                 <ul className={text}>
-                                    <li>Troubleshooted customer issues with account, online policies, registration, and payments.</li>
+                                    <li>Troubleshooted customer issues with classes, online policies, registration, and payments.</li>
                                     <li>Scheduled, edited, and managed the operations side of the classes.</li>
                                     <li>Ran and analyzed sales reports in order to better create and find sales opportunities.</li>
+                                    <li>Set up partnerships with community outreach.</li>
                                 </ul>
                             </div>
                         </>
